@@ -1,0 +1,29 @@
+sudo apt-get update
+sudo apt install python3-pip
+pip install openai
+
+python3
+
+
+
+import openai
+
+API_KEY_FAKE = 'adfadfadfasfasdfasfdasfdasfxxxxxxxxxxxx'
+
+openai.api_key = API_KEY
+
+model  = 'davinci'
+
+response = openai.Completion.create(
+	prompt = 'How many miles from new york to la',
+	model  = model
+)
+
+response = openai.Completion.create(
+	prompt = 'How far is it from the Earth to mars',
+	model  = model
+)
+
+
+
+
